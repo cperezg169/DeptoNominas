@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------------------------------------------------------Loading----------------------------------------------> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--------------------------------------------------------Otras Extenciones---------------------------------------------->    
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+    <!--------------------------------------------------------Diseño Exportado de Internet---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <!--------------------------------------------------------Diseño Personal----------------------------------------------------------->
+    <link href="Css/OFF/style.css" rel="stylesheet" type="text/css">
+    <link href="Css/OFF/Loading.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" style="color: red;" href="Img/OFF/Icono.png">
+
+    
+  <!--------------------------------------------------------Funciones Exportado de Internet--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<!--------------------------------------------------------Funciones Personalizadas------------------------------------------------------>
+    <script type="text/javascript" src="Js/OFF/Catalogo.js"></script>
+    <script type="text/javascript" src='Js/OFF/Funciones.js'></script>
+    <script type="text/javascript" src='Js/OFF/Next.js'></script>
+    <script src="Js/OFF/JQuery.js"></script>
+    <script type="text/javascript" src='Js/OFF/jquery-3.4.1.min.js'></script>
+
+<!--------------------------------------------------------Modal------------------------------------------------------>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>OFFICE | 2022</title>
+</head>
+
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!--------------------------------------------------------Carga de La Pagina------------------------------------------------------> 
+
+<div class="loader">
+    <div></div>
+</div>
+
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(2000);
+            $(".content").fadeIn(2000);
+        });
+    </script>
+
+<!--------------------------------------------------------Formulario Web------------------------------------------------------>
+<div class="content">
+<div class="container mt-6">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-10">
+
+        <form id="regForm" name="regForm" autocomplete="off">
+                    
+                    <center>
+                        <div><img id="Logo" class="icon" src="Img/OFF/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                    </center>
+                <pre></pre>
+                    
+                <h4><i class="fa fa-user fa-1x" aria-hidden="true"><b>   Correlativo de Oficios</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Departamento o Sección<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <select id="Departamento_Sección" name="Departamento_Sección" onclick="audio.play();" placeholder="" class="form-control" required>
+                    <option value='' disabled selected>-</option>
+                    <option value="'011-022">NÓMINAS 011 Y 022</option>
+                    <option value="'029">NÓMINAS 029</option>
+                    <option value="'021">NÓMINAS 021</option>
+                    <option value="'031">NÓMINAS 031</option>
+                    <option value="'018">NÓMINAS SUB GRUPO 18</option>
+                    <option value="'DESCJ">DESCUESTOS JUDICIALES</option>
+                    <option value="'DAPS">PUESTOS Y SALARIOS</option>
+                    <option value="'PLAB">PRESTACIONES LABORALES</option>
+                    <option value="'AUPR">AUDITORIA, PRESUPUESTO Y REINTEGROS</option> 
+                </select>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Fecha de Elaboración <span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <i data-toggle="modal" data-target="#exampleModal" tabindex="0" data-toggle="popover" data-trigger="focus" title="Formato: Mes/Día/Año" data-content="And here's some amazing content. It's very engaging. Right?">
+                <input type="tel" class="form-control" id="Fecha_Elaboración" name="Fecha_Elaboración"  onclick="audio.play();" placeholder="" class="form-control" onchange="edad(this.value)"/>
+                </i>
+            
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+                        <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js'></script>
+                        <script src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js'></script>
+                        
+                        <script>
+                            
+                        $('#Fecha_Elaboración').datepicker({
+                            uiLibrary: 'bootstrap4',
+                            locale: 'es-es',
+                            format: 'dd/mm/yyyy',
+                        });
+                        </script>
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                    </script>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Descripción<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" pattern="/^?\d+\.?\d*$/"  onclick="audio.play();"  spellcheck="true" onkeyup="mayus(this);" id="Descripción" rows="4" name="Descripción" placeholder="" class="form-control"></textarea>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Destinatario<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Destinatario" name="Destinatario" placeholder="" class="form-control">
+                </div>
+                </div>
+
+                                
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Responsable<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <input list="datalistRespo" placeholder="Buscar Nombre de Responsable..." onclick="audio.play();"  id="Responsable" name="Responsable" placeholder="" class="form-control">
+                <datalist id="datalistRespo">
+                    <option value="AJUAREZ">ALMA LISETH JUAREZ LOPEZ</option>
+                    <option value="ABLANCO">ALIDA BLANCO SANTOS</option>
+                    <option value="BPEREZ">BYRON DANILO PEREZ HERNANDEZ</option>
+                    <option value="CILLESCAS">CARLOS ILLESCAS</option>
+                    <option value="CPEREZ">CARLOS ROBERTO PÉREZ GARCÍA</option>
+                    <option value="CIHERNANDEZ">CECILIA I. HERNANDEZ PALACIOS</option>
+                    <option value="DDARDON">DINA LILY DARDON PEREZ</option>
+                    <option value="DCENTES">DOMINGA NOEMI CENTES CORDON</option>
+                    <option value="EAJTUN">ENDY FABIOLA AJTUN GARCÍA</option>
+                    <option value="ECARRERA">EMMA FABIOLA CARRERA PACAY</option>
+                    <option value="EORTIZ">ERY ROKSANA ORTIZ VIELMAN</option>
+                    <option value="EGOMEZ">EVELYN JEANNETH GOMEZ ARGUETA</option>
+                    <option value="FRAMIREZ">FERNANDO RAMIREZ LARRAÑAGA</option>
+                    <option value="GESTRADA">GRISELDA ARACELY ESTRADA ROSALES</option>
+                    <option value="HILLESCAS">HECTOR HUGO ILLESCAS ORELLANA</option>
+                    <option value="JAHERNANDEZ">JOSE ARMANDO HERNANDEZ LOPEZ</option>
+                    <option value="JCARRILLO">JOSE C. CARRILLO DE LA CRUZ</option>
+                    <option value="JDIAZ">JEPZER FEDERICO DIAZ SAMAYOA</option>
+                    <option value="JGARNICA">JOSE MIGUEL GARNICA VARGAS</option>
+                    <option value="JSIQUINAJAY">JOSE MIGUEL ORLANDO SIQUINAJAY MARROQUIN</option>
+                    <option value="JVILLAGRAN">JOSE HEBERTO VILLAGRAN</option>
+                    <option value="JGONSALEZ">JULISA GONSALEZ</option>
+                    <option value="KESPINOZA">KENNETH ORLANDO ESPINOZA MARROQUIN</option>
+                    <option value="KECHE">KEVIN EDUARDO CHE ESQUITE</option>
+                    <option value="LNICOLAS">LUIS EMILIO NICOLAS QUIJIVIR</option>
+                    <option value="LTOBAR">LILIAN TOBAR</option>
+                    <option value="MMELGAR">MARLON MELGAR</option>
+                    <option value="MJPAIZ">MARIA JOSE PAIZ SARAVIA</option>
+                    <option value="OMRAMIREZ">OMAR RAMIREZ PEREZ</option>
+                    <option value="POROZCO">PABLO EMILIO OROZCO BRAVO</option>
+                    <option value="RABADILLO">RUDDY ROBERTO ABADILLO RAMIREZ</option>
+                    <option value="ROLIVEROS">RICARDO ANTONIO OLIVEROS GOMEZ</option>
+                    <option value="RFFUENTES">RENZO FEDERICO FUENTES AGUILAR</option>
+                    <option value="SSGOMEZ">SINDY SAMARA GÓMEZ DAVILA</option>
+                    <option value="SVARGAS">SIRIA VARGAS</option>
+                    <option value="VRIVERA">VIRGINIA MARITZA RIVERA GARCIA</option>
+                    <option value="YSIQUIVACHE">YOCELIN LICETYA SIQUIVACHE PEREZ</option>
+                </datalist>
+                </div>
+                </div>
+                </div>
+
+                <p></p>
+                <div id="form_alerts"></div>
+                
+                <div>
+                    <center><button onclick="audio.play();" type="submit" class="btn btn-success mt-3 mb-1 next">ENVIAR<span></span></button></center>   
+                </div>
+
+<pre></pre>
+<pre></pre>
+            <!----------------------------- Derecho de Autor ----------------------------->             
+            <center>
+            <footer>
+                <div class="contenido">
+                <b><a id="DereAuto" class="autor & font-italic">&copy; Msc. Lic. Carlos Pérez <span id="anio"></span><br><span>Reservados todos los Derechos</span></br></a></b>
+                </div>
+            </footer>
+            </center>
+        </form>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwxv01iqAvWGYQHcgQjuvfUrRI4NCHTou76oJ6wqRyajr7TKnbPcS3TTllm6CYyq-Pk/exec'
+            const form = document.forms['regForm']
+            
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => $("#form_alerts").html("<div class='alert alert-success' role='alert'>Su Respuesta a sido enviada exitosamente <a href='OFF2022-CORRELATIVO.html' class='alert-link'>Ver No. de Correlativo</a>. (Dale un Clic).</div>"))
+                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Mensaje no enviado.</div>"))
+                form.reset()
+            })
+        </script>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+   <!---------------------------------------------Comentario de Información--------------------------------------------->
+<script>
+    $(function () {
+      $('.example-popover').popover({
+        container: 'body'
+      })
+    })
+    </script>
+
+   
+
+   <!---------------------------------------------Mascara de Entrada--------------------------------------------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+   <script type="text/javascript">
+       $("#Fecha_Elaboración").mask("00/00/0000");
+       </script>
+   
+
+   
+   <!---------------------------------------------Borrar Marco de Agua--------------------------------------------->
+   <div id="ultimo"></div>
+
+
+</body>
+</html>

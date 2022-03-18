@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------------------------------------------------------Loading----------------------------------------------> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--------------------------------------------------------Otras Extenciones---------------------------------------------->    
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+    <!--------------------------------------------------------Diseño Exportado de Internet---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <!--------------------------------------------------------Diseño Personal----------------------------------------------------------->
+    <link href="Css/Unidad 201/style.css" rel="stylesheet" type="text/css">
+    <link href="Css/Unidad 201/Loading.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" style="color: red;" href="Img/Unidad 201/Icono.png">
+
+    
+  <!--------------------------------------------------------Funciones Exportado de Internet--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<!--------------------------------------------------------Funciones Personalizadas------------------------------------------------------>
+    <script type="text/javascript" src="Js/Unidad 201/Catalogo.js"></script>
+    <script type="text/javascript" src='Js/Unidad 201/Funciones.js'></script>
+    <script type="text/javascript" src='Js/Unidad 201/Next.js'></script>
+    <script src="Js/Unidad 201/JQuery.js"></script>
+    <script type="text/javascript" src='Js/Unidad 201/jquery-3.4.1.min.js'></script>
+
+<!--------------------------------------------------------Modal------------------------------------------------------>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>MSPAS | Unidad 201</title>
+</head>
+
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!--------------------------------------------------------Carga de La Pagina------------------------------------------------------> 
+
+<div class="loader">
+    <div></div>
+</div>
+
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
+
+<!--------------------------------------------------------Formulario Web------------------------------------------------------>
+
+
+        <form id="regForm" name="regForm" autocomplete="off">
+
+            <div class="content">
+                <div class="container mt-6">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-md-10">
+
+                <fieldset class="show center">    
+                    <div class="form-card">    
+                            <pre></pre>
+                            <pre></pre>
+                            <center>
+                            <div id="web">
+                                <h1 class="sub-heading" style="color: rgb(0, 0, 0);"><b>BIENVENIDO</b></h1>
+          
+                                <div>
+                                    <div><img class="icon" src="Img/Unidad 201/Bienvenido.png" style="width: 85%; height: 75%;"></div>
+                                </div>
+                            </div>
+                            </center> 
+
+                            <button id="next1" onclick="audio.play();" type="button" class="btn btn-primary mt-3 mb-1 next"><b>INICIAR</b><span></span></button>     
+
+                        </div>
+                    </fieldset>
+
+         
+<!--------------------------------------------------------Información Personal---------------------------------------------->                 
+        <fieldset class="form">
+            <div class="form-card">
+                    
+                    <center>
+                        <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                    </center>
+                <pre></pre>
+                    
+                <h4><i class="fa fa-user fa-1x" aria-hidden="true"><b>   Información Personal</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Nombres<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Nombres" name="Nombres" placeholder="" class="form-control" onblur="validate1(1);">
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Apellidos<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Apellidos" name="Apellidos" placeholder="" class="form-control" onblur="validate1(2);">
+                </div>
+                </div>
+
+                
+                <div class="col-md-4">
+                <div class="mb-3">
+                <label class="form-control-label">Casada<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Casado" name="Casado" placeholder="" value="" class="form-control" onblur="validate1(3);">
+                </div>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Estado Civil<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select id="Estado" name="Estado_Civil" onclick="audio.play();" placeholder="" class="form-control" onblur="validate1(4);">
+                <option value="" disabled selected>-</option>
+                <option value="CASADO">Casado (a)</option>
+                <option value="SOLTERO">Soltero (a)</option>
+                <option value="UNIDO DE HECHO">Unido de Hecho</option>
+                </select>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Sexo<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select id="Genero" name="Genero" onclick="audio.play();" placeholder="" class="form-control" onblur="validate1(5);">
+                <option value='' disabled selected>-</option>
+                <option value="FEMENINO">Femenino</option>
+                <option value="MASCULINO">Masculino</option>
+                </select>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="mb-3">
+                <label class="form-control-label">Grupo Étnico<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select id="Etnico" name="Estado_Etnico" onclick="audio.play();" placeholder="" class="form-control" onblur="validate1(6);">
+                <option value='' disabled selected>-</option>
+                <option value="GARÍFUNA">Garífuna</option>
+                <option value="LADINO">Ladino</option>
+                <option value="MAYA">Maya</option>
+                <option value="XINCA">Xinca</option>
+                </select>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">DPI<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" id="Dpi" name="DPI" onclick="audio.play();" placeholder=""  class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==15) return false;" onblur="validate1(7);"/>    
+                </div>
+                </div>
+
+                
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">NIT<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input onkeyup="mayus(this);" minlength="5" onclick="audio.play();" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" type="text" id="Nit" name="NIT" placeholder="" class="form-control" onblur="validate1(8);">
+                </div>
+                </div>
+
+                <div class="col-md-3">
+                <div class="mb-3">
+                <label class="form-control-label">Fecha de Nacimiento<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <i data-toggle="modal" data-target="#exampleModal" tabindex="0" data-toggle="popover" data-trigger="focus" title="Formato: Mes/Día/Año" data-content="And here's some amazing content. It's very engaging. Right?">
+                <input type="tel" readonly class="form-control" id="Nacimiento" name="Nacimiento"  onclick="audio.play();" placeholder="" class="form-control" onchange="edad(this.value)" onblur="validate1(9);"/>
+                </i>
+        
+      
+<!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+             $('#Nacimiento').datepicker({
+            locale: 'es-es',
+            language: 'es-es',
+            uiLibrary: 'bootstrap4',
+            format: 'mm/dd/yyyy',
+            viewMode: 'years',
+            });
+    </script>
+<!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+
+
+                </div>
+                </div>
+
+  
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Edad Actual<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                <input type="text" id="Edad" name="Edad" placeholder="" class="form-control" readonly onblur="validate1(10);">
+                </div>
+                </div>
+                </div>  
+
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 1 de 6</p></b>
+
+                
+                <button id="next" type="button" onclick="audio.play();" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next2" type="button" class="btn btn-primary mt-2 mb-1 next mt-1 " onclick="validate1(0) & audio.play();"><span></span>Siguiente</button>
+                
+            </div>
+        </fieldset>
+
+
+<!--------------------------------------------------------Información Domiciliaria---------------------------------------------->        
+        <fieldset class="form">
+            <div class="form-card">
+
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                </center>
+                <pre></pre>
+
+                <h4><i class="fa fa-home fa-1x" aria-hidden="true"><b>   Información Domiciliaria</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+        
+
+
+
+
+                <div class="row">
+                <div class="col-md-3">
+                <div class="mb-3">
+                <label class="form-control-label">Celular<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" id="Celular" name="Celular" onclick="audio.play();" placeholder="" class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==15) return false;" onblur="validate2(1);"/>
+                </div>
+                </div>
+
+                <div class="col-md-3">
+                <div class="mb-3">
+                <label class="form-control-label">Telefono<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                <input type="tel" id="Telefono" name="Telefono" onclick="audio.play();" placeholder="" class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==15) return false;" onblur="validate2(2);"/>
+                </div>
+                </div>
+                                
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Correo Personal<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" spellcheck="true" onkeyup="mayus(this);" type="email" id="Email" name="Email" size="64" minlength="3"  placeholder="" class="form-control" onblur="validate2(3);">
+                </div>
+                </div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="md-3">
+                <label class="form-control-label">Dirección<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" onclick="audio.play();" pattern="/^?\d+\.?\d*$/"  spellcheck="true" onkeyup="mayus(this);" id="Dirección" rows="5" name="Dirección" placeholder="" class="form-control" onblur="validate2(4);"></textarea>
+                </div>
+                </div> 
+
+
+                <div class="col">
+                <div class="md-3">
+                <label class="form-control-label">Departamento<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select name="Departamento" id="Departamento" onclick="audio.play();" placeholder="" class="form-control & seleccion" onchange="DeptoMuni();" onblur="validate2(5);">
+                    <option value='' disabled selected>-</option>
+                    <option value="GUATEMALA">GUATEMALA</option>
+                    <option value="EL_PROGRESO">EL PROGRESO</option>
+                    <option value="SACATEPÉQUEZ">SACATEPÉQUEZ</option>
+                    <option value="CHIMALTENANGO">CHIMALTENANGO</option>
+                    <option value="ESCUINTLA">ESCUINTLA</option>
+                    <option value="SANTA_ROSA">SANTA ROSA</option>
+                    <option value="SOLOLÁ">SOLOLÁ</option>
+                    <option value="TOTONICAPÁN">TOTONICAPÁN</option>
+                    <option value="QUETZALTENANGO">QUETZALTENANGO</option>
+                    <option value="SUCHITEPÉQUEZ">SUCHITEPÉQUEZ</option>
+                    <option value="RETALHULEU">RETALHULEU</option>
+                    <option value="SAN_MARCOS">SAN MARCOS</option>
+                    <option value="HUEHUETENANGO">HUEHUETENANGO</option>
+                    <option value="QUICHÉ">QUICHÉ</option>
+                    <option value="BAJA_VERAPAZ">BAJA VERAPAZ</option>
+                    <option value="ALTA_VERAPAZ">ALTA VERAPAZ</option>
+                    <option value="PETÉN">PETÉN</option>
+                    <option value="IZABAL">IZABAL</option>
+                    <option value="ZACAPA">ZACAPA</option>
+                    <option value="CHIQUIMULA">CHIQUIMULA</option>
+                    <option value="JALAPA">JALAPA</option>
+                    <option value="JUTIAPA">JUTIAPA</option>
+                </select>
+
+                <pre></pre>
+                <label class="form-control-label">Municipio<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select id="Municipio" onclick="audio.play();" name="Municipio" placeholder="" class="form-control & seleccion" onblur="validate2(6);">
+                    <option value='' disabled selected>-</option>              
+                </select>
+                </div>
+                </div>
+                </div>
+
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 2 de 6</p></b>
+
+                
+                <button id="next" type="button" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next3" type="button" class="btn btn-primary mt-2 mb-1 next mt-1 " onclick="validate2(0);"><span></span>Siguiente</button>
+            
+
+            </div>
+        </fieldset>
+
+
+<!--------------------------------------------------------Información Laboral---------------------------------------------->        
+        <fieldset class="form">
+            <div class="form-card">        
+                
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                </center>
+                <pre></pre>
+
+                
+                <h4><i class="fa fa-briefcase fa-1x" aria-hidden="true"><b>   Información Laboral</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Dependencia<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select name="Dependencia" onclick="audio.play();" id="Dependencia" placeholder="" class="form-control" onchange="DeptoTrabajos();"  onblur="validate3(1);">
+                    <option value="" disabled selected>-</option> 
+                    <option value="DESPACHO_MINISTERIAL">DESPACHO MINISTERIAL</option>
+                    <option value="VICEMINISTERIO_ADMINISTRATIVO_FINANCIERO">VICEMINISTERIO ADMINISTRATIVO FINANCIERO</option>
+                    <option value="VICEMINISTERIO_DE_ATENCION_PRIMARIA">VICEMINISTERIO DE ATENCION PRIMARIA</option>
+                    <option value="VICEMINISTERIO_DE_HOSPITALES">VICEMINISTERIO DE HOSPITALES</option>
+                    <option value="VICEMINISTERIO_TECNICO">VICEMINISTERIO TECNICO</option>
+                </select>
+                </div>
+                </div>
+
+                
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Departamento o Sección<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select class="form-control & seleccion" id="DeptoTrabajo" onclick="audio.play();" name="Departamento_o_Sección_"  onblur="validate3(2);">
+                    <option value="" disabled selected>-</option>
+                </select>
+                </div>
+                </div>
+                </div>
+
+                
+                <div class="row">
+                <div class="col-md-2">
+                <div class="mb-3">
+                <label class="form-control-label">No. de Oficina<span style="color: rgb(255, 0, 0)"><b> *</b></span></label>
+                <input type="tel" id="Oficina" name="Oficina" placeholder=""  class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;" onclick="audio.play();"  onblur="validate3(3);"/>    
+                </div>
+                </div>
+
+                <div class="col-md-2">
+                <div class="mb-3">
+                <label class="form-control-label">Telefono<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" id="TelefonoL" name="Telefono_Oficina" placeholder="" class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==15) return false;" onclick="audio.play();"  onblur="validate3(4);"/>
+                </div>
+                </div>
+
+                <div class="col-md-2">
+                <div class="mb-3">
+                <label class="form-control-label">Extensión<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" id="No_Extensión" name="No_Extensión" placeholder=""  class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" onclick="audio.play();"  onblur="validate3(5);"/>    
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Renglon Presupuestario<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select name="Renglon" id="Renglon" placeholder="" class="selectpicker & form-control & seleccion" data-style="btn-danger" onchange="cambia();" onclick="audio.play();" onblur="validate3(6);">
+                    <option value="" disabled selected>-</option> 
+                    <option value="RENGLON_011">011-Personal Permanente</option>
+                    <option value="RENGLON_021">021-Personal Supernumerario</option>
+                    <option value="RENGLON_022">022-Personal Por Contrato</option>
+                    <option value="RENGLON_029">029-Otras Remuneraciones De Personal Temporal</option>
+                    <option value="RENGLON_031">031-Jornales</option>
+                    <option value="RENGLON_036">036-Retribución Por Servicio</option>
+                    <option value="RENGLON_SUBG18">SubGrupo 18</option>
+                </select>
+                </div>
+                </div>
+
+                <div class="col-md-3">
+                <div class="mb-3">
+                <label class="form-control-label">Fecha de Ingreso<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <i data-toggle="modal" data-target="#exampleModal" tabindex="0" data-toggle="popover" data-trigger="focus" title="Formato: Mes/Día/Año" data-content="And here's some amazing content. It's very engaging. Right?">
+                <input type="tel" readonly id="Fecha_Ingreso" name="Fecha_Ingreso" onclick="audio.play();" placeholder="" class="form-control"  onblur="validate3(7);">
+                </i>   
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                        <link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                        
+                            <script type="text/javascript">
+                                     $('#Fecha_Ingreso').datepicker({
+                                    locale: 'es-es',
+                                    language: 'es-es',
+                                    uiLibrary: 'bootstrap4',
+                                    format: 'dd/mm/yyyy',
+                                    viewMode: 'years',
+                                    });
+                            </script>
+                    <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                
+                </div>
+                </div>
+                </div> 
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3"> 
+                <label class="form-control-label">Registro de Horario<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" onclick="audio.play();" type="radio" name="Registro_Horario" id="SI_REGISTRO" value="SI">
+                            <label class="form-check-label" id="COM">SI</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" onclick="audio.play();" type="radio" name="Registro_Horario" id="NO_REGISTRO" value="NO">
+                            <label class="form-check-label" id="COM">NO</label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Horario de Entrada<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" onclick="audio.play();" id="Horario_Inicio" name="Horario_Inicio" placeholder="" class="form-control">
+                        
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                        <link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                        
+                            <script type="text/javascript">
+                                     $('#Horario_Inicio').timepicker({
+                                    locale: 'es-es',
+                                    language: 'es-es',
+                                    uiLibrary: 'bootstrap4',
+                                    });
+                            </script>
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                </div>
+                </div>
+
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Horario de Salida<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" onclick="audio.play();" id="Horario_Fin" name="Horario_Fin" placeholder="" class="form-control">
+                        
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                        <link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                        
+                            <script type="text/javascript">
+                                     $('#Horario_Fin').timepicker({
+                                    locale: 'es-es',
+                                    language: 'es-es',
+                                    uiLibrary: 'bootstrap4',
+                                    });
+                            </script>
+                        <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                    
+                </div>
+                </div>                
+                </div>  
+
+                <div class="row">
+                <div class="col">
+                <div class="md-3">
+                <label class="form-control-label">Motivo<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" onclick="audio.play();" pattern="/^?\d+\.?\d*$/"  spellcheck="true" onkeyup="mayus(this);" id="Motivo" rows="5" name="Motivo" placeholder="" class="form-control" ></textarea>
+                </div>
+                </div>
+                </div> 
+
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 3 de 6</p></b>
+
+                <button id="next" type="button" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next4" type="button" class="btn btn-primary mt-2 mb-1 next mt-1 " onclick="validate3(0);"><span></span>Siguiente</button>
+                
+            </div>
+        </fieldset>
+
+            
+<!--------------------------------------------------------Información de Puesto---------------------------------------------->        
+        <fieldset class="form">
+            <div class="form-card"> 
+                
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                </center>
+                <pre></pre>
+
+                
+                <h4><i class="fa fa-address-card fa-1x" aria-hidden="true"><b>   Información De Puesto</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+                    <div class="row"> 
+                    <div class="col">
+                    <div class="mb-3">
+                    <label class="form-control-label">Puesto Oficial<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                    <select class="form-control & seleccion" id="opt" name="Puesto_Oficial" onclick="audio.play();" onblur="validate4(1);">
+                        <option value="" disabled selected>-</option>
+                    </select>
+                    </div>
+                    </div>
+    
+                    <div class="col">
+                    <div class="mb-3">
+                    <label class="form-control-label">Puesto Funcional<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                    <input style="text-transform:uppercase" spellcheck="true" onkeyup="mayus(this);" placeholder="" class="form-control" id="Puesto_Funsional" name="Puesto_Funsional"  onclick="audio.play();" onblur="validate4(2);">
+                    </div>
+                    </div>  
+                    </div>               
+    
+    
+                    <div class="row"> 
+                    <div class="col">
+                    <div class="mb-3">                  
+                    <label class="form-control-label">Correo Laboral<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                    <input style="text-transform:uppercase" spellcheck="true" onkeyup="mayus(this);" type="email" id="Email_Laboral" name="Email_Laboral" size="64" minlength="3"  placeholder="" class="form-control"  onclick="audio.play();" onblur="validate4(3);">
+                    </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                    <div class="mb-3">
+                    <label class="form-control-label">Salario Mensual<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                    <i data-toggle="modal" data-target="#exampleModal" tabindex="0" data-toggle="popover" data-trigger="focus" title="Salario Mensual Sin Descuentos" data-content="And here's some amazing content. It's very engaging. Right?">
+                    <input type="tel" id="Salario" name="Salario" placeholder=""  onclick="audio.play();" class="form-control" pattern="/^?\d+\.?\d*$/" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  onblur="validate4(4);"/>   
+                    </i>   
+                    </div>
+                    </div>
+
+                    <div class="col-md-3">
+                    <div class="mb-3"> 
+                    <label class="form-control-label">Comisionado<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" onclick="audio.play();" type="radio" name="Comisionado" id="SI_COMISIONADO" value="SI">
+                                <label class="form-check-label" id="COM">SI</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" onclick="audio.play();" type="radio" name="Comisionado" id="NO_COMISIONADO" value="NO">
+                                <label class="form-check-label" id="COM">NO</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>  
+
+                <div class="row"> 
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Unidad Ejecutora<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input list="datalistUnidad" placeholder="Buscar Unidad Ejecutora..." onclick="audio.play();" id="Unidad_Ejecutora" name="Unidad_Ejecutora" placeholder="" class="form-control">
+                <datalist id="datalistUnidad">
+                        <option value="201-Departamento Administrativo">201-Departamento Administrativo</option>
+                        <option value="202-Dirección De Área De Salud Guatemala Nor Oriente">202-Dirección De Área De Salud Guatemala Nor Oriente</option>
+                        <option value="203-Dirección De Área De Salud Guatemala Nor Occidente">203-Dirección De Área De Salud Guatemala Nor Occidente</option>
+                        <option value="204-Dirección De Área De Salud Guatemala Sur">204-Dirección De Área De Salud Guatemala Sur</option>
+                        <option value="205-Dirección De Área De Salud De El Progreso">205-Dirección De Área De Salud De El Progreso</option>
+                        <option value="206-Dirección De Área De Salud De Sacatepéquez">206-Dirección De Área De Salud De Sacatepéquez</option>
+                        <option value="207-Direccion De Área De Salud De Chimaltenango">207-Direccion De Área De Salud De Chimaltenango</option>
+                        <option value="208-Dirección De Área De Salud De Escuintla">208-Dirección De Área De Salud De Escuintla</option>
+                        <option value="209-Dirección De Área De Salud De Santa Rosa">209-Dirección De Área De Salud De Santa Rosa</option>
+                        <option value="210-Dirección De Área De Salud De Sololá">210-Dirección De Área De Salud De Sololá</option>
+                        <option value="211-Dirección De Área De Salud De Totonicapán">211-Dirección De Área De Salud De Totonicapán</option>
+                        <option value="212-Dirección De Área De Salud De Quetzaltenango">212-Dirección De Área De Salud De Quetzaltenango</option>
+                        <option value="213-Dirección De Área De Salud De Suchitepéquez">213-Dirección De Área De Salud De Suchitepéquez</option>
+                        <option value="214-Dirección De Área De Salud De Retalhuleu">214-Dirección De Área De Salud De Retalhuleu</option>
+                        <option value="215-Dirección De Área De Salud De San Marcos">215-Dirección De Área De Salud De San Marcos</option>
+                        <option value="216-Dirección De Área De Salud De Huehuetenango">216-Dirección De Área De Salud De Huehuetenango</option>
+                        <option value="217-Dirección De Área De Salud De Quiché">217-Dirección De Área De Salud De Quiché</option>
+                        <option value="218-Dirección De Área De Salud De Ixcán">218-Dirección De Área De Salud De Ixcán</option>
+                        <option value="219-Dirección De Área De Salud De Baja Verapaz">219-Dirección De Área De Salud De Baja Verapaz</option>
+                        <option value="220-Dirección De Área De Salud De Alta Verapaz">220-Dirección De Área De Salud De Alta Verapaz</option>
+                        <option value="221-Dirección De Área De Salud De Petén Norte">221-Dirección De Área De Salud De Petén Norte</option>
+                        <option value="222-Dirección De Área De Salud De Izabal">222-Dirección De Área De Salud De Izabal</option>
+                        <option value="223-Dirección De Área De Salud De Zacapa">223-Dirección De Área De Salud De Zacapa</option>
+                        <option value="224-Dirección De Área De Salud De Chiquimula">224-Dirección De Área De Salud De Chiquimula</option>
+                        <option value="225-Dirección De Área De Salud De Jalapa">225-Dirección De Área De Salud De Jalapa</option>
+                        <option value="226-Dirección De Área De Salud De Jutiapa">226-Dirección De Área De Salud De Jutiapa</option>
+                        <option value="227-Hospital General San Juan De Dios">227-Hospital General San Juan De Dios</option>
+                        <option value="228-Hospital De Salud Mental Dr. Federico Mora">228-Hospital De Salud Mental Dr. Federico Mora</option>
+                        <option value="229-Hospital Nacional De Ortopedia Y Rehabilitación Dr. Jorge Von Ahn">229-Hospital Nacional De Ortopedia Y Rehabilitación Dr. Jorge Von Ahn</option>
+                        <option value="230-Hospital Roosevelt">230-Hospital Roosevelt</option>
+                        <option value="231-Hospital Infantil De Infectología Y Rehabilitación">231-Hospital Infantil De Infectología Y Rehabilitación</option>
+                        <option value="232-Hospital San Vicente">232-Hospital San Vicente</option>
+                        <option value="233-Hospital Nacional De Amatitlán">233-Hospital Nacional De Amatitlán</option>
+                        <option value="234-Hospital De El Progreso">234-Hospital De El Progreso</option>
+                        <option value="235-Hospital Pedro De Bethancourt">235-Hospital Pedro De Bethancourt</option>
+                        <option value="236-Hogar De Ancianos Fray Rodrigo De La Cruz">236-Hogar De Ancianos Fray Rodrigo De La Cruz</option>
+                        <option value="237-Hospital Nacional De Chimaltenango">237-Hospital Nacional De Chimaltenango</option>
+                        <option value="238-Hospital De Escuintla">238-Hospital De Escuintla</option>
+                        <option value="239-Hospital De Tiquisate">239-Hospital De Tiquisate</option>
+                        <option value="240-Hospital Regional De Cuilapa Licenciado Guillermo Fernández Llerena">240-Hospital Regional De Cuilapa Licenciado Guillermo Fernández Llerena</option>
+                        <option value="241-Hospital Departamental De Sololá">241-Hospital Departamental De Sololá</option>
+                        <option value="242-Hospital Departamental De Totonicapán">242-Hospital Departamental De Totonicapán</option>
+                        <option value="243-Hospital Regional De Occidente Quetzaltenango">243-Hospital Regional De Occidente Quetzaltenango</option>
+                        <option value="244-Hospital De Especialidades Rodolfo Robles">244-Hospital De Especialidades Rodolfo Robles</option>
+                        <option value="245-Hospital Nacional De Coatepeque">245-Hospital Nacional De Coatepeque</option>
+                        <option value="246-Hospital De Mazatenango">246-Hospital De Mazatenango</option>
+                        <option value="247-Hospital De Retalhuleu">247-Hospital De Retalhuleu</option>
+                        <option value="248-Hospital Nacional De San Marcos Dr. Moisés Villagran Mazariegos">248-Hospital Nacional De San Marcos Dr. Moisés Villagran Mazariegos</option>
+                        <option value="249-Hospital Nacional Malacatán San Marcos">249-Hospital Nacional Malacatán San Marcos</option>
+                        <option value="250-Hospital Regional De Huehuetenango Dr. Jorge Vides Molina">250-Hospital Regional De Huehuetenango Dr. Jorge Vides Molina</option>
+                        <option value="251-Hospital Nacional De San Pedro Necta">251-Hospital Nacional De San Pedro Necta</option>
+                        <option value="252-Hospital Regional De El Quiché">252-Hospital Regional De El Quiché</option>
+                        <option value="253-Hospital Nacional De Salamá">253-Hospital Nacional De Salamá</option>
+                        <option value="254-Hospital De Cobán">254-Hospital De Cobán</option>
+                        <option value="255-Hospital De San Benito">255-Hospital De San Benito</option>
+                        <option value="256-Hospital De Melchor De Mencos">256-Hospital De Melchor De Mencos</option>
+                        <option value="257-Hospital Distrital Sayaxché Petén">257-Hospital Distrital Sayaxché Petén</option>
+                        <option value="258-Hospital De Poptún">258-Hospital De Poptún</option>
+                        <option value="259-Hospital De La Amistad Japón Guatemala">259-Hospital De La Amistad Japón Guatemala</option>
+                        <option value="260-Hospital Nacional Infantil Elisa Martínez, Puerto Barrios, Izabal">260-Hospital Nacional Infantil Elisa Martínez, Puerto Barrios, Izabal</option>
+                        <option value="261-Hospital Regional De Zacapa">261-Hospital Regional De Zacapa</option>
+                        <option value="262-Hospital De Chiquimula">262-Hospital De Chiquimula</option>
+                        <option value="263-Hospital Nacional Nicolasa Cruz Jalapa">263-Hospital Nacional Nicolasa Cruz Jalapa</option>
+                        <option value="264-Hospital Nacional Ernestina Garcia Vda. De Recinos">264-Hospital Nacional Ernestina Garcia Vda. De Recinos</option>
+                        <option value="265-Dirección De Área De Salud De Petén Sur Occidente">265-Dirección De Área De Salud De Petén Sur Occidente</option>
+                        <option value="266-Dirección De Área De Salud De Petén Suroriente">266-Dirección De Área De Salud De Petén Suroriente</option>
+                        <option value="267-Hospital De Joyabaj">267-Hospital De Joyabaj</option>
+                        <option value="268-Hospital De Nebaj">268-Hospital De Nebaj</option>
+                        <option value="269-Hospital De Uspantán">269-Hospital De Uspantán</option>
+                        <option value="270-Hospital Fray Bartolomé De Las Casas">270-Hospital Fray Bartolomé De Las Casas</option>
+                        <option value="271-Hospital De La Tinta">271-Hospital De La Tinta</option>
+                        <option value="272-Escuela Nacional De Enfermeras">272-Escuela Nacional De Enfermeras</option>
+                        <option value="273-Escuela Nacional De Enfermería De Cobán E Instituto De Adiestramiento Para Personal De Salud De Las Verapaces">273-Escuela Nacional De Enfermería De Cobán E Instituto De Adiestramiento Para Personal De Salud De Las Verapaces</option>
+                        <option value="274-Escuela Nacional De Enfermería De Occidente">274-Escuela Nacional De Enfermería De Occidente</option>
+                        <option value="275-Escuela De Auxiliares De Enfermería De Sur Occidente">275-Escuela De Auxiliares De Enfermería De Sur Occidente</option>
+                        <option value="276-Escuela Para Auxiliares De Enfermería De Oriente">276-Escuela Para Auxiliares De Enfermería De Oriente</option>
+                        <option value="277-Instituto De Adiestramiento De Personal En Salud Indaps">277-Instituto De Adiestramiento De Personal En Salud Indaps</option>
+                        <option value="278-Dirección De Área De Salud Guatemala Central">278-Dirección De Área De Salud Guatemala Central</option>
+                        <option value="279-Programa De Accesibilidad De Medicamentos Proam">279-Programa De Accesibilidad De Medicamentos Proam</option>
+                        <option value="280-Laboratorio Nacional De Salud">280-Laboratorio Nacional De Salud</option>
+                        <option value="281-Cementerio Nacional">281-Cementerio Nacional</option>
+                        <option value="283-Dirección De Área De Salud Ixil">283-Dirección De Área De Salud Ixil</option>
+                        <option value="284-Hospital De Barillas">284-Hospital De Barillas</option>
+                        <option value="285-Hospital Nacional Especializado De Villa Nueva">285-Hospital Nacional Especializado De Villa Nueva</option>
+                        <option value="286-Unidad Especial De Ejecución De Programas Y Proyectos De Salud">286-Unidad Especial De Ejecución De Programas Y Proyectos De Salud</option>
+                        <option value="287-Hospital General de Tecpan, Tipo I Guatemala">287-Hospital General de Tecpan, Tipo I Guatemala</option>
+                </datalist>
+                </div>
+                </div>
+                      
+                <div class="col-md-3">
+                <div class="mb-3">
+                <label class="form-control-label">Fecha de Traslado<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <input type="tel" readonly id="Fecha_Traslado" name="Fecha_Traslado" placeholder="" onclick="audio.play();" class="form-control">
+                    
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                <link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+                <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                
+                    <script type="text/javascript">
+                             $('#Fecha_Traslado').datepicker({
+                            locale: 'es-es',
+                            language: 'es-es',
+                            uiLibrary: 'bootstrap4',
+                            format: 'mm/dd/yyyy',
+                            viewMode: 'years',
+                            });
+                    </script>
+
+                </div>
+                </div>
+                </div>  
+
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 4 de 6</p></b>
+
+                
+                <button id="next" type="button" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next5" type="button" class="btn btn-primary mt-2 mb-1 next mt-1 " onclick="validate4(0);"><span></span>Siguiente</button>
+                
+
+            </div>
+        </fieldset>
+
+
+<!--------------------------------------------------------Información Academica---------------------------------------------->        
+        <fieldset class="form">
+            <div class="form-card"> 
+                
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                </center>
+                <pre></pre>
+
+                
+                <h4><i class="fa fa-graduation-cap fa-1x" aria-hidden="true"><b>   Información Academica</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Nivel Academico<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <select name="Nivel_Academico" id="NivelAcademico" placeholder="" class="selectpicker & form-control & seleccion" data-style="btn-danger" onclick="audio.play();" onchange="NivelEdus();" onblur="validate5(1);">
+                    <option value="" disabled selected>-</option> 
+                    <option value="PRIMARIA">PRIMARIA</option>
+                    <option value="SECUNDARIA">SECUNDARIA</option>
+                    <option value="DIVERSIFICADO">DIVERSIFICADO</option>
+                </select>
+                </div>
+                </div>
+
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Ultimo Título<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                    <select class="form-control & seleccion" id="NivelEdu" name="NivelEdu" onclick="audio.play();" onblur="validate5(2);">
+                        <option value="" disabled selected>-</option>
+                    </select>
+                </div>
+                </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3"> 
+                        <label class="form-control-label">¿Cuenta con Estudios Universitarios?<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Universidad" id="SI_UNIVERSIDAD" value="SI">
+                                    <label class="form-check-label" id="COM">SI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Universidad" id="NO_UNIVERSIDAD" value="NO">
+                                    <label class="form-check-label" id="COM">NO</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        
+                        <div class="col">
+                        <div class="mb-3">
+                        <label class="form-control-label">Universidad<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <select id="Universidad" name="Nombre_Universidad" placeholder="" onclick="audio.play();" class="form-control" onblur="validate5(1);">
+                                <option value='' disabled selected>-</option>
+                                <option value="UNIVERSIDAD DA VINCI DE GUATEMALA">UNIVERSIDAD DA VINCI DE GUATEMALA</option>
+                                <option value="UNIVERSIDAD DE OCCIDENTE">UNIVERSIDAD DE OCCIDENTE</option>
+                                <option value="UNIVERSIDAD DE SAN CARLOS">UNIVERSIDAD DE SAN CARLOS</option>
+                                <option value="UNIVERSIDAD DEL ISTMO">UNIVERSIDAD DEL ISTMO</option>
+                                <option value="UNIVERSIDAD DEL VALLE">UNIVERSIDAD DEL VALLE</option>
+                                <option value="UNIVERSIDAD FRANCISCO MARROQUIN">UNIVERSIDAD FRANCISCO MARROQUIN</option>
+                                <option value="UNIVERSIDAD GALILEO">UNIVERSIDAD GALILEO</option>
+                                <option value="UNIVERSIDAD INTERNACIONES">UNIVERSIDAD INTERNACIONES</option>
+                                <option value="UNIVERSIDAD MARIANO GALVEZ DE GUATEMALA">UNIVERSIDAD MARIANO GALVEZ DE GUATEMALA</option>
+                                <option value="UNIVERSIDAD MESOAMERICANA">UNIVERSIDAD MESOAMERICANA</option>
+                                <option value="UNIVERSIDAD PANAMERICANA">UNIVERSIDAD PANAMERICANA</option>
+                                <option value="UNIVERSIDAD RAFAEL LANDIVAR">UNIVERSIDAD RAFAEL LANDIVAR</option>
+                                <option value="UNIVERSIDAD REGIONAL DE GUATEMALA">UNIVERSIDAD REGIONAL DE GUATEMALA</option>
+                                <option value="NIVERSIDAD RURAL">UNIVERSIDAD RURAL</option>
+                                <option value="UNIVERSIDAD SAN CARLOS DE GUATEMALA">UNIVERSIDAD SAN CARLOS DE GUATEMALA</option>
+                                <option value="VRIJE UNIVERSITEIT BRUSSEL">VRIJE UNIVERSITEIT BRUSSEL</option>
+                                <option value="NATIONAL BUSINESS SCHOOL GUATEMALA">NATIONAL BUSINESS SCHOOL GUATEMALA</option>                 
+                        </select>
+                        </div>
+                        </div>
+                        </div>  
+
+
+                        <div class="row">
+                        <div class="col">
+                        <div class="mb-3">
+                        <label class="form-control-label">Nivel Educativo<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <select id="Nivel_Educativo" name="Nivel_Educativo" onclick="audio.play();" placeholder="" class="form-control">
+                                <option value='' disabled selected>-</option>
+                                <option value="DIPLOMADO UNIVERSITARIOS">DIPLOMADO UNIVERSITARIOS</option>
+                                <option value="TECNICO UNIVERSITARIOS">TECNICO UNIVERSITARIOS</option>
+                                <option value="LICENCIATURA">LICENCIATURA</option>
+                            </select>
+                        </div>
+                        </div>
+
+                        <div class="col">
+                        <div class="mb-3">                            
+                        <label class="form-control-label">Grado Alcanzado:<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <select id="Grado" name="Grado" placeholder="" class="form-control" onclick="audio.play();" onchange="NoColegioG();">
+                            <option value='' disabled selected>-</option>
+                                <option value="1er_TRIMESTRE">1er_TRIMESTRE</option>
+                                <option value="2do_TRIMESTRE">2do_TRIMESTRE</option>
+                                <option value="3er_TRIMESTRE">3er_TRIMESTRE</option>
+                                <option value="4to_TRIMESTRE">4to_TRIMESTRE</option>
+                                <option value="5to_TRIMESTRE">5to_TRIMESTRE</option>
+                                <option value="6to_TRIMESTRE">6to_TRIMESTRE</option>
+                                <option value="7mo_TRIMESTRE">7mo_TRIMESTRE</option>
+                                <option value="8avo_TRIMESTRE">8avo_TRIMESTRE</option>
+                                <option value="9no_TRIMESTRE">9no_TRIMESTRE</option>
+                                <option value="10mo_TRIMESTRE">10mo_TRIMESTRE</option>
+                                <option value="11avo_TRIMESTRE">11avo_TRIMESTRE</option>
+                                <option value="12avo_TRIMESTRE">12avo_TRIMESTRE</option>
+                                <option value="13avo_TRIMESTRE">13avo_TRIMESTRE</option>
+                                <option value="14avo_TRIMESTRE">14avo_TRIMESTRE</option>
+                                <option value="15avo_TRIMESTRE">15avo_TRIMESTRE</option>
+                                <option value="16avo_TRIMESTRE">16avo_TRIMESTRE</option>
+                                <option value="17avo_TRIMESTRE">17avo_TRIMESTRE</option>
+                                <option value="18avo_TRIMESTRE">18avo_TRIMESTRE</option>
+                                <option value="19avo_TRIMESTRE">19avo_TRIMESTRE</option>
+                                <option value="20avo_TRIMESTRE">20avo_TRIMESTRE</option>
+                                <option value="21avo_TRIMESTRE">21avo_TRIMESTRE</option>
+                                <option value="22avo_TRIMESTRE">22avo_TRIMESTRE</option>
+                                <option value="23avo_TRIMESTRE">23avo_TRIMESTRE</option>
+                                <option value="24avo_TRIMESTRE">24avo_TRIMESTRE</option>
+                                <option value="1er_SEMESTRE">1er_SEMESTRE</option>
+                                <option value="2do_SEMESTRE">2do_SEMESTRE</option>
+                                <option value="3er_SEMESTRE">3er_SEMESTRE</option>
+                                <option value="4to_SEMESTRE">4to_SEMESTRE</option>
+                                <option value="5to_SEMESTRE">5to_SEMESTRE</option>
+                                <option value="6to_SEMESTRE">6to_SEMESTRE</option>
+                                <option value="7mo_SEMESTRE">7mo_SEMESTRE</option>
+                                <option value="8vo_SEMESTRE">8vo_SEMESTRE</option>
+                                <option value="9no_SEMESTRE">9no_SEMESTRE</option>
+                                <option value="10mo_SEMESTRE">10mo_SEMESTRE</option>
+                                <option value="11avo_SEMESTRE">11avo_SEMESTRE</option>
+                                <option value="12avo_SEMESTRE">12avo_SEMESTRE</option>
+                                <option value="1er_AÑO">1er_AÑO</option>
+                                <option value="2do_AÑO">2do_AÑO</option>
+                                <option value="3er_AÑO">3er_AÑO</option>
+                                <option value="4to_AÑO">4to_AÑO</option>
+                                <option value="5to_AÑO">5to_AÑO</option>
+                                <option value="6to_AÑO">6to_AÑO</option>
+                                <option value="PENSUM_CERRADO">PENSUM_CERRADO</option>
+                                <option value="100">GRADUADO</option>                           
+                        </select>
+                        </div>
+                        </div>
+                        </div>                          
+
+                        <div class="row">
+                        <div class="col">
+                        <div class="mb-3">
+                        <label class="form-control-label">Diploma/Título:<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <input style="text-transform:uppercase" spellcheck="true" onclick="audio.play();" onkeyup="mayus(this);" type="text" id="Diploma_Tútulo" name="Diploma_Tútulo" placeholder="" class="form-control" >
+                        </div>
+                        </div>
+                        </div>     
+
+                        <div class="row">
+                        <div class="col">
+                        <div class="mb-3">
+                        <label class="form-control-label">Colegio Profesional<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <select id="Colegio" onclick="audio.play();" name="Colegio" placeholder="" class="form-control">
+                            <option value='' disabled selected>-</option>               
+                        </select>
+                        </div>
+                        </div>
+
+                        <div class="col-md-2">
+                        <div class="mb-3">
+                        <label class="form-control-label">No. Colegiado<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <input onclick="audio.play();" onkeyup="mayus(this);" minlength="" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" type="text" id="No_Colegio" name="No_Colegio" placeholder="" class="form-control">
+                        </div>
+                        </div>
+
+                        <div class="col-md-3">
+                        <div class="mb-3">
+                        <label class="form-control-label">Fecha Vigencia<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                        <input type="tel" readonly id="Fecha_Vigencia" name="Fecha_Vigencia" placeholder="" onclick="audio.play();" class="form-control">
+
+
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                        <link href="/Content/demo.css" rel="stylesheet" type="text/css" />
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                        <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                        
+                            <script type="text/javascript">
+                                     $('#Fecha_Vigencia').datepicker({
+                                    locale: 'es-es',
+                                    language: 'es-es',
+                                    uiLibrary: 'bootstrap4',
+                                    format: 'mm/dd/yyyy',
+                                    viewMode: 'years',
+                                    });
+                            </script>
+
+                        </div>
+                        </div>
+                        </div>
+
+
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 5 de 6</p></b>
+
+                
+                <button id="next" type="button" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next6" type="button" class="btn btn-primary mt-2 mb-1 next mt-1 " onclick="validate5(0);"><span></span>Siguiente</button>
+                
+
+            </div>
+        </fieldset>
+
+
+<!--------------------------------------------------------Información Paterna---------------------------------------------->        
+        <fieldset class="form">
+            <div class="form-card"> 
+                
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+                </center>
+                <pre></pre>
+
+                
+                <h4><i class="fa fa-heartbeat fa-1x" aria-hidden="true"><b>   Información Academica</b></i></h4>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                <pre></pre>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3"> 
+                        <label class="form-control-label">¿Tiene hijas o hijos?<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Hijos" id="Hijos" value="SI">
+                                    <label class="form-check-label" id="COM">SI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Hijos" id="Hijos" value="NO">
+                                    <label class="form-check-label" id="COM">NO</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3"> 
+                        <label class="form-control-label">¿Tiene una Discapacidad?<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Discapacidad" id="SI_DISCAPACIDAD" value="SI">
+                                    <label class="form-check-label" id="COMS">SI</label>
+                                </div>
+                                <pre></pre>
+                                <div class="form-check">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Discapacidad" id="NO_DISCAPACIDAD" value="NO">
+                                    <label class="form-check-label" id="COMS">NO</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="col">
+                <div class="md-3">
+                <label class="form-control-label">Mencione Discapacidad<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" onclick="audio.play();" pattern="/^?\d+\.?\d*$/"  onblur="validate6(1);" spellcheck="true" onkeyup="mayus(this);" id="Descripción_Discapacidad" rows="3" name="Descripción_Discapacidad" placeholder="" class="form-control"></textarea>
+                </div>
+                </div>
+                </div>  
+
+                <pre></pre>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3"> 
+                        <label class="form-control-label">¿Tiene una Enfermedad?<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input"  onclick="audio.play();" type="radio" name="Enfermedad" id="SI_ENFERMEDAD" value="SI">
+                                    <label class="form-check-label" id="COMS">SI</label>
+                                </div>
+                                <pre></pre>
+                                <div class="form-check">
+                                    <input class="form-check-input" onclick="audio.play();" type="radio" name="Enfermedad" id="NO_ENFERMEDAD" value="NO">
+                                    <label class="form-check-label" id="COMS">NO</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col">
+                <div class="md-3">
+                <label class="form-control-label">Mencione Enfermedad<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" onclick="audio.play();" pattern="/^?\d+\.?\d*$/" onblur="validate6(2);" spellcheck="true" onkeyup="mayus(this);" id="Descripción_Enfermedad" rows="3" name="Descripción_Enfermedad" placeholder="" class="form-control"></textarea>
+                </div>
+                </div>
+                </div>  
+                
+                <pre></pre>
+                <b><p style="text-align: left;">Sección 6 de 6</p></b>
+
+                
+                <button id="next" type="button" class="btn btn-secondary mt-2 mb-1 prev"><span></span>Regresar</button>
+                <button id="next7" type="submit" class="btn btn-success mt-2 mb-1 next mt-1 " onclick="validate6(0) & audio.play();"><span></span>ENVIAR</button>
+
+
+            </div>
+        </fieldset>
+      
+
+<!--------------------------------------------------------Información Agradecimiento---------------------------------------------->          
+     
+<fieldset class="form">
+    <div class="form-card">
+
+            <center>
+                <div><img id="Logo" class="icon" src="Img/Unidad 201/Logo.jpg" style="width: 50%; height: 50%;"></div>
+            </center>
+
+            <pre></pre>
+            <pre></pre>
+            <pre></pre>
+            <pre></pre>
+
+            <center>
+                <img id="Enviado" src="Img/Unidad 201/Enviado.gif" width="15%" class="mb-4">
+                <h3><b>¡Respuesta enviada exitosamente!</b></h3> <span>Gracias por su valiosa información. ¡Nos ayuda a mejorar nuestros servicios!</span>
+            </center>
+            <pre></pre>
+            <pre></pre>
+            <pre></pre>
+            <pre></pre>
+
+
+
+
+        </div>
+    </fieldset>
+
+    <p></p>
+    <div style="text-align: center;" id="form_alerts"></div>
+
+    <pre></pre>
+            <!----------------------------- Derecho de Autor ----------------------------->             
+            <center>
+            <footer>
+                <div class="contenido">
+                <b><a id="DereAuto" class="autor & font-italic">&copy; Msc. Lic. Carlos Pérez <span id="anio"></span><br><span>Reservados todos los Derechos</span></br></a></b>
+                </div>
+            </footer>
+            </center>
+
+            
+        </div>
+    </div>
+</div>
+</div>    
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzfdlTxb7_L5lZ42ji4WorPn1SUOEb_4RlGUFQlsd0ACUIL8iFcciD1fYebO98wYPmx/exec'
+            const form = document.forms['regForm']
+            
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => $("#form_alerts").html("<div class='alert alert-success'><b>¡GRACIAS SU RESPUESTA HA SIDO RECIBIDA CON EXITO!</b></div>"))
+                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'><b>¡LA CONEXIÓN DE INTERNET ES INESTABLE!, POR FAVOR HAGA CLICK EN 'REGRESAR' Y VUELVA 'ENVIAR SU RESPUESTA'</b></div>"))
+                form.reset
+            })
+        </script>
+    
+    
+
+
+
+
+
+<!---------------------------------------------Bloquedar Comisionado--------------------------------------------->
+<script>
+// Accedemos al botón
+var userInput = document.getElementById('Unidad_Ejecutora');
+var userInput = document.getElementById('Fecha_Traslado');
+
+
+// evento para el input radio del "si"
+document.getElementById('SI_COMISIONADO').addEventListener('click', function(e) {
+console.log('Vamos a habilitar el input text');
+Unidad_Ejecutora.disabled = false;
+Fecha_Traslado.disabled = false;
+});
+// evento para el input radio del "no"
+document.getElementById('NO_COMISIONADO').addEventListener('click', function(e) {
+console.log('Vamos a deshabilitar el input text');
+Unidad_Ejecutora.disabled = true;
+Fecha_Traslado.disabled = true;
+});
+</script>
+
+
+
+<!---------------------------------------------Bloquedar Comisionado--------------------------------------------->
+<script>
+// Accedemos al botón
+var userInput = document.getElementById('Unidad_Ejecutora');
+var userInput = document.getElementById('Horario_Inicio');
+var userInput = document.getElementById('Horario_Fin');
+
+// evento para el input radio del "si"
+document.getElementById('SI_REGISTRO').addEventListener('click', function(e) {
+console.log('Vamos a habilitar el input text');
+Horario_Inicio.disabled = false;
+Horario_Fin.disabled = false;
+Motivo.disabled = true;
+});
+// evento para el input radio del "no"
+document.getElementById('NO_REGISTRO').addEventListener('click', function(e) {
+console.log('Vamos a deshabilitar el input text');
+Horario_Inicio.disabled = true;
+Horario_Fin.disabled = true;
+Motivo.disabled = false;
+});
+</script>
+
+
+
+<!---------------------------------------------Bloquedar Universidad--------------------------------------------->
+<script>
+    // Accedemos al botón
+var userInput = document.getElementById('Universidad');
+var userInput = document.getElementById('Nivel_Educativo');
+var userInput = document.getElementById('Diploma_Tútulo');
+var userInput = document.getElementById('Grado');
+var userInput = document.getElementById('Colegio');
+var userInput = document.getElementById('No_Colegio');
+var userInput = document.getElementById('Fecha_Vigencia');
+
+
+// evento para el input radio del "si"
+document.getElementById('SI_UNIVERSIDAD').addEventListener('click', function(e) {
+console.log('Vamos a habilitar el input text');
+Universidad.disabled = false;
+Nivel_Educativo.disabled = false;
+Diploma_Tútulo.disabled = false;
+Grado.disabled = false;
+Colegio.disabled = false;
+No_Colegio.disabled = false;
+Fecha_Vigencia.disabled = false;
+});
+// evento para el input radio del "no"
+document.getElementById('NO_UNIVERSIDAD').addEventListener('click', function(e) {
+console.log('Vamos a deshabilitar el input text');
+Universidad.disabled = true;
+Nivel_Educativo.disabled = true;
+Diploma_Tútulo.disabled = true;
+Grado.disabled = true;
+Colegio.disabled = true;
+No_Colegio.disabled = true;
+Fecha_Vigencia.disabled = true;
+});
+</script>
+
+
+
+<!---------------------------------------------Bloquedar Discapacidad--------------------------------------------->
+<script>
+    // Accedemos al botón
+var userInput = document.getElementById('Descripción_Discapacidad');
+
+
+// evento para el input radio del "si"
+document.getElementById('SI_DISCAPACIDAD').addEventListener('click', function(e) {
+console.log('Vamos a habilitar el input text');
+Descripción_Discapacidad.disabled = false;
+});
+// evento para el input radio del "no"
+document.getElementById('NO_DISCAPACIDAD').addEventListener('click', function(e) {
+console.log('Vamos a deshabilitar el input text');
+Descripción_Discapacidad.disabled = true;
+});
+</script>
+
+
+<!---------------------------------------------Bloquedar Enfermedad--------------------------------------------->
+<script>
+    // Accedemos al botón
+var userInput = document.getElementById('Descripción_Enfermedad');
+
+
+// evento para el input radio del "si"
+document.getElementById('SI_ENFERMEDAD').addEventListener('click', function(e) {
+console.log('Vamos a habilitar el input text');
+Descripción_Enfermedad.disabled = false;
+});
+// evento para el input radio del "no"
+document.getElementById('NO_ENFERMEDAD').addEventListener('click', function(e) {
+console.log('Vamos a deshabilitar el input text');
+Descripción_Enfermedad.disabled = true;
+});
+</script>
+
+
+<!---------------------------------------------Bloquedar Codigo Profesional--------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#Grado").on("change", function() {
+            if (parseInt($("#Grado").val()) === 100) {
+                $("#Colegio").prop("disabled", false);
+            } else {
+                $("#Colegio").prop("disabled", true);
+            }
+        });
+
+        $("#Grado").on("change", function() {
+            if (parseInt($("#Grado").val()) === 100) {
+                $("#No_Colegio").prop("disabled", false);
+            } else {
+                $("#No_Colegio").prop("disabled", true);
+            }
+        });
+
+        $("#Grado").on("change", function() {
+            if (parseInt($("#Grado").val()) === 100) {
+                $("#Fecha_Vigencia").prop("disabled", false);
+            } else {
+                $("#Fecha_Vigencia").prop("disabled", true);
+            }
+        });
+
+    });
+</script>
+
+
+
+   <!---------------------------------------------Comentario de Información--------------------------------------------->
+<script>
+    $(function () {
+      $('.example-popover').popover({
+        container: 'body'
+      })
+    })
+    </script>
+
+
+   <!---------------------------------------------Calcular Edad--------------------------------------------->
+<script language="JavaScript">
+    function edad(Fecha){
+    fecha = new Date(Fecha)
+    hoy = new Date()
+    ed = parseInt((hoy -fecha)/365/24/60/60/1000)
+
+    document.getElementById('Edad').value =  ed + " Años"
+    }
+</script>
+   
+
+   <!---------------------------------------------Mascara de Entrada--------------------------------------------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+   <script type="text/javascript">
+       $("#Dpi").mask("0000-00000-0000");
+       $("#Dpi2").mask("0000-00000-0000");
+       $("#Telefono").mask("0000-0000");
+       $("#TelefonoL").mask("0000-0000");
+       $("#Celular").mask("0000-0000");
+       $("#Oficina").mask("00");
+       $("#No_Extensión").mask("000000");
+       $("#Nacimiento").mask("00/00/0000");
+       $("#Fecha_Ingreso").mask("00/00/0000");
+       $("#Fecha_Traslado").mask("00/00/0000");
+       $("#PFin").mask("0000");
+       </script>
+   
+   
+   <!---------------------------------------------Mascara de Moneda--------------------------------------------->
+   <script>
+       document.getElementById("Salario").onblur =function (){    
+   this.value = parseFloat(this.value.replace(/,/g, ""))
+   .toFixed(2)
+   .toString()
+   .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+   
+   document.getElementById("display").value = this.value.replace(/,/g, "")
+   
+   }
+   </script>
+   
+   
+   <!---------------------------------------------Borrar Marco de Agua--------------------------------------------->
+   <div id="ultimo"></div>
+
+
+</body>
+</html>

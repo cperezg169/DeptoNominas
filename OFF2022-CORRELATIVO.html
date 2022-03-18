@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--------------------------------------------------------Diseño Personal----------------------------------------------------------->
+    <link rel="shortcut icon" style="color: red;" href="Img/OFF/Icono.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet"> 
+
+
+
+    <title>OFF2022-CORRELATIVO</title>
+</head>
+ 
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<center>
+
+<pre id="espacio"></pre>
+<div><img id="Logo" class="icon" src="Img/OFF/Logo.jpg" style="width: 30%; height: 30%;"></div>
+<pre id="espacio"></pre>
+
+
+<a href="https://mysitegt.000webhostapp.com/OFF2022" onclick="audio.play();" class="btn btn-primary active" role="button" aria-pressed="true">GENERAR NUEVO CORRELATIVO</a>
+<pre id="espacio"></pre>
+
+<style>
+#datas{
+  width: 75%;
+  height: 75%;
+  padding: 0px;
+
+}
+
+#espacio{
+  background: white;
+  border: white;
+}
+</style>
+
+
+<div id="datas" class="content">
+<table id="raw-table" class="table table-responsive display" width="100%" cellspacing="0"></table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://chriszarate.github.io/sheetrock/dist/sheetrock.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+
+
+<script>
+
+    // Sheetrock.js 1.0 Example 5
+    // https://chriszarate.github.io/sheetrock/
+    
+    //  Load the entire sheet and then use DataTables to create a sortable, paginated table.
+    
+    // We can't call DataTables right away because the data is fetched asynchronously. Instead, we wait for Sheetrock to emit a `sheetrock:loaded` event before calling `.DataTables()`.
+    
+    // Define spreadsheet URL.
+    var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1PtMCKerTHJnJxN03jogVyxgI9jDWTPT1xiSpya6qXyg/edit#gid=774525030';
+
+    
+    // Load all hitters and format with DataTables.
+    $('#raw-table').sheetrock({
+      url: mySpreadsheet,
+      query: "select A,B,C,D,E,F order by A desc",
+
+      
+    }).on('sheetrock:loaded', function () {
+      
+      
+      $(this).DataTable( {
+        "order": [[ 4, "desc" ]],
+
+      language: {
+        "decimal":        "",
+        "emptyTable":     "No hay datos",
+        "info":           "Mostrando _START_ a _END_ de _TOTAL_ registros",
+        "infoEmpty":      "Mostrando 0 a 0 de 0 registros",
+        "infoFiltered":   "(Filtro de _MAX_ total registros)",
+        "infoPostFix":    "",
+        "thousands":      ",",
+        "lengthMenu":     "Mostrar _MENU_ registros",
+        "loadingRecords": "Cargando...",
+        "processing":     "Procesando...",
+        "search":         "Buscar:",
+        "zeroRecords":    "No se encontraron coincidencias",
+        "paginate": {
+            "first":      "Primero",
+            "last":       "Ultimo",
+            "next":       "Próximo",
+            "previous":   "Anterior"
+    },
+    "aria": {
+        "sortAscending":  ": Activar orden de columna ascendente",
+        "sortDescending": ": Activar orden de columna desendente"
+    }
+      }
+    } );
+} );
+
+
+
+
+    </script>
+ 
+
+<!-- Script  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>   
+
+
+
+</center>
+</div>
+   
+   <!---------------------------------------------Borrar Marco de Agua--------------------------------------------->
+   <div id="ultimo"></div>
+
+
+
+</body>
+</html>
