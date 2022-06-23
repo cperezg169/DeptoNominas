@@ -642,7 +642,7 @@
   <pre></pre> 
 
     
-    <div style="display:none;">
+    <!---div style="display:none;"----->
   <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Respuesta</button>
 </div>
     
@@ -696,7 +696,7 @@ margin-right:.3em;
 <!-- -------------------------------Mensaje flotante------------------------------------------ -->
 
 <!-- -------------------------------Reloj------------------------------------------ -->
-<div style="line-height: 5%; display:none;" class="contenedor"> 
+<div style="line-height: 5%;" class="contenedor"> 
   <h4>Tiempo restante para enviar la información</h4>
   <div class="contenido">
     <div class="contador">
@@ -843,7 +843,7 @@ document.getElementById("Total").value=number.toFixed(round);
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Jun 23, 2022 13:00:00').getTime(),
+let countDown = new Date('Jun 23, 2022 14:30:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
