@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------------------------------------------------------Loading----------------------------------------------> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--------------------------------------------------------Otras Extenciones---------------------------------------------->    
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+    <!--------------------------------------------------------Diseño Exportado de Internet---------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <!--------------------------------------------------------Diseño Personal----------------------------------------------------------->
+    <link href="Css/OFF/style.css" rel="stylesheet" type="text/css">
+    <link href="Css/OFF/Loading.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" style="color: red;" href="Img/OFF/Icono.png">
+
+        
+    <!--------------------------------------------------------Funciones Exportado de Internet--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <!--------------------------------------------------------Funciones Personalizadas------------------------------------------------------>
+    <script src="Js/OFF/JQuery.js"></script>
+    <script type="text/javascript" src='Js/OFF/jquery-3.4.1.min.js'></script>
+    <script type="text/javascript" src='Js/OFF/Funciones.js'></script>
+
+    <script src="Js/OFF/JQuery.js"></script>
+    <script type="text/javascript" src='Js/OFF/jquery-3.4.1.min.js'></script>
+
+
+    <!--------------------------------------------------------Modal------------------------------------------------------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>OFFICE | CORRELATIVO</title>
+</head>
+
+
+
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!--------------------------------------------------------Carga de La Pagina------------------------------------------------------> 
+<div class="page-loader">
+	<div class="spinner"></div>
+	<div class="txt1">Cargando.....<br></div>
+</div>
+
+
+<script>
+    $(window).on('load',function(){
+	setTimeout(function(){ // allowing 3 secs to fade out loader
+	$('.page-loader').fadeOut('slow');
+	},3000);
+});
+</script>
+<!--------------------------------------------------------Formulario Web------------------------------------------------------>
+
+<div class="content">
+
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-7">
+                <div class="card b-0">
+
+            
+        <form id="regForm" name="regForm" autocomplete="off" novalidate class="needs-validation">
+
+
+                <center>
+                    <div><img id="Logo" class="icon" src="Img/OFF/Logo.jpg" style="width: 65%; height: 65%;"></div>
+                </center>
+
+                <pre></pre>
+                <pre></pre>
+                    
+                <div style="text-align: center;" >
+                <h3><b>Correlativo de Oficios</b></h3>
+                </div>
+
+
+                <pre></pre>
+                <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Nombre de Unidad<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <select id="Departamento_Sección" class="form-select" name="Departamento_Sección" onclick="audio.play();" placeholder="" required >
+                    <option value='' disabled selected>-</option>
+                    <option value="'011-022">NÓMINAS 011 Y 022</option>
+                    <option value="'029">NÓMINAS 029</option>
+                    <option value="'021">NÓMINAS 021</option>
+                    <option value="'031">NÓMINAS 031</option>
+                    <option value="'036">NÓMINAS 036</option>
+                    <option value="'018">NÓMINAS SUB GRUPO 18</option>
+                    <option value="'DESCJ">DESCUESTOS JUDICIALES</option>
+                    <option value="'UAPS">PUESTOS Y SALARIOS</option>
+                    <option value="'PLAB">PRESTACIONES LABORALES</option>
+                    <option value="'CONYVER">CONTROL Y VERIFICACIÓN</option>
+                </select>
+                </div>
+                </div>
+
+                
+
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Fecha de Elaboración <span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <input type="tel" class="form-control" id="Fecha_Elaboración" name="Fecha_Elaboración"  placeholder="" required class="form-control" />
+                    
+                                <!--------------------------------------------------------Diseño DatePicker---------------------------------------------->
+                                <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                                <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+                                <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+                                <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+                                
+                                    <script type="text/javascript">
+                                             $('#Fecha_Elaboración').datepicker({
+                                            locale: 'es-es',
+                                            language: 'es-es',
+                                            uiLibrary: 'bootstrap4',
+                                            format: 'dd/mm/yyyy',
+                                            });
+                                    </script>
+
+
+                </div>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Descripción<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <textarea style="text-transform:uppercase" pattern="/^?\d+\.?\d*$/"  onclick="audio.play();"  spellcheck="true" required onkeyup="mayus(this);" id="Descripción" rows="4" name="Descripción" placeholder="" class="form-control"></textarea>  
+                </div>
+                </div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Destinatario<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/"  required spellcheck="true" onkeyup="mayus(this);" type="text" id="Destinatario" name="Destinatario" placeholder="" class="form-control">  
+                </div>
+                </div>
+
+                                
+                <div class="col">
+                <div class="mb-3">
+                <label class="form-control-label">Responsable<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                <select placeholder="" onclick="audio.play();" class="form-select" id="Responsable" name="Responsable" required>
+                    <option value='' disabled selected>-</option>
+                    <option value="AJUAREZ">ALMA LISETH JUAREZ LOPEZ</option>
+                    <option value="ABLANCO">ALIDA BLANCO SANTOS</option>
+                    <option value="BPEREZ">BYRON DANILO PEREZ HERNANDEZ</option>
+                    <option value="CILLESCAS">CARLOS ILLESCAS</option>
+                    <option value="CPEREZ">CARLOS ROBERTO PÉREZ GARCÍA</option>
+                    <option value="CIHERNANDEZ">CECILIA I. HERNANDEZ PALACIOS</option>
+                    <option value="DDARDON">DINA LILY DARDON PEREZ</option>
+                    <option value="DCENTES">DOMINGA NOEMI CENTES CORDON</option>
+                    <option value="EAJTUN">ENDY FABIOLA AJTUN GARCÍA</option>
+                    <option value="ECARRERA">EMMA FABIOLA CARRERA PACAY</option>
+                    <option value="EORTIZ">ERY ROKSANA ORTIZ VIELMAN</option>
+                    <option value="EGOMEZ">EVELYN JEANNETH GOMEZ ARGUETA</option>
+                    <option value="FRAMIREZ">FERNANDO RAMIREZ LARRAÑAGA</option>
+                    <option value="GESTRADA">GRISELDA ARACELY ESTRADA ROSALES</option>
+                    <option value="HILLESCAS">HECTOR HUGO ILLESCAS ORELLANA</option>
+                    <option value="JAHERNANDEZ">JOSE ARMANDO HERNANDEZ LOPEZ</option>
+                    <option value="JCARRILLO">JOSE C. CARRILLO DE LA CRUZ</option>
+                    <option value="JDIAZ">JEPZER FEDERICO DIAZ SAMAYOA</option>
+                    <option value="JGARNICA">JOSE MIGUEL GARNICA VARGAS</option>
+                    <option value="JSIQUINAJAY">JOSE MIGUEL ORLANDO SIQUINAJAY MARROQUIN</option>
+                    <option value="JVILLAGRAN">JOSE HEBERTO VILLAGRAN</option>
+                    <option value="JZECENA">JOSE CARLOS ZECENA SANTIAGO</option>
+                    <option value="JGONSALEZ">JULISA GONSALEZ</option>
+                    <option value="KESPINOZA">KENNETH ORLANDO ESPINOZA MARROQUIN</option>
+                    <option value="KECHE">KEVIN EDUARDO CHE ESQUITE</option>
+                    <option value="LNICOLAS">LUIS EMILIO NICOLAS QUIJIVIR</option>
+                    <option value="LTOBAR">LILIAN TOBAR</option>
+                    <option value="MMELGAR">MARLON MELGAR</option>
+                    <option value="MJPAIZ">MARIA JOSE PAIZ SARAVIA</option>
+                    <option value="MLOPEZ">MIRNA MARISOL LÓPEZ HERNÁNDEZ</option>
+                    <option value="OMRAMIREZ">OMAR RAMIREZ PEREZ</option>
+                    <option value="POROZCO">PABLO EMILIO OROZCO BRAVO</option>
+                    <option value="RABADILLO">RUDDY ROBERTO ABADILLO RAMIREZ</option>
+                    <option value="ROLIVEROS">RICARDO ANTONIO OLIVEROS GOMEZ</option>
+                    <option value="RFFUENTES">RENZO FEDERICO FUENTES AGUILAR</option>
+                    <option value="SSGOMEZ">SINDY SAMARA GÓMEZ DAVILA</option>
+                    <option value="SVARGAS">SIRIA VARGAS</option>
+                    <option value="VRIVERA">VIRGINIA MARITZA RIVERA GARCIA</option>
+                    <option value="YSIQUIVACHE">YOCELIN LICETYA SIQUIVACHE PEREZ</option>
+                </select> 
+                </div>
+                </div>
+                </div>
+
+                <p></p>
+                <div id="form_alerts"></div>
+
+                    <button onclick="audio.play();"  id="btn_enviar" type="submit" class="btn-block btn-primary mt-3 mb-1 next mt-4"><i class="fa fa-paper-plane" aria-hidden="true"></i> ENVIAR<span class="fa fa-long-arrow-right"></span></button>  
+
+                            <!----------------------------- Derecho de Autor ----------------------------->
+                            <pre></pre> 
+                            <pre></pre>       
+                        
+                            <div id="información" style="text-align: center; line-height: 75%;">
+                            <label class="form-control-label">Horario de atención: 8:00 am a 16:30 pm</label>
+                            <br>
+                            <label class="form-control-label">Teléfono: 2444-7474 Ext. 1516</label>
+                            <br>
+                            <label class="form-control-label">Direccción: 6Av. 3-45 zona 11 Ciudad de Guatemala</label>
+                            </div>
+
+        </form>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+</div>
+
+<!-- -------------------------------Mensaje flotante------------------------------------------ -->
+<div style="text-align: just;" class="container" style="display:none;" id="myAlert">
+</div>
+
+<div style="text-align: just;" class="container" style="display:none;" id="myAlert20">
+</div>
+
+
+
+<style>
+    #myAlert {
+    width:400px;
+    position:fixed;
+    bottom: 100px;
+    right: 10px;
+    }
+    
+    #myAlert20 {
+    width:400px;
+    position:fixed;
+    bottom: 100px;
+    right: 10px;
+    }
+    
+    
+    .alert {
+    position: relative;
+    }
+    
+    .alert .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+    }
+    
+    .alert .fa {
+    margin-right:.3em;
+    }
+    </style>
+    
+<!-- -------------------------------Mensaje flotante------------------------------------------ -->
+
+
+
+<!---------------------------------------------Mascara de Entrada--------------------------------------------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+   <script type="text/javascript">
+       $("#Fecha_Elaboración").mask("00/00/0000");
+       </script>
+   
+
+   
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+<script>
+    'use strict';
+const btn_enviar = document.querySelector('#btn_enviar');
+const Text_Departamento_Sección = document.querySelector('#Departamento_Sección');
+const Text_Fecha_Elaboración = document.querySelector('#Fecha_Elaboración');
+const Text_Descripción = document.querySelector('#Descripción');
+const Text_Destinatario = document.querySelector('#Destinatario');
+const Text_Responsable = document.querySelector('#Responsable');
+
+
+let validar = () => {
+    let inputs_requeridos = document.querySelectorAll('#regForm [required]');
+    let error = false;
+
+    for (let i = 0; i < inputs_requeridos.length; i++) {
+        if (inputs_requeridos[i].value == '') {
+            inputs_requeridos[i].classList.add('input-error');
+            error = true;
+        } else {
+            inputs_requeridos[i].classList.remove('input-error');
+        }
+    }
+
+
+
+    return error;
+};
+let limpiar = () => {
+    Text_Departamento_Sección.value = "";
+    Text_Fecha_Elaboración.value = "";
+    Text_Descripción.value = "";
+    Text_Destinatario.value = "";
+    Text_Responsable.value = "";
+
+};
+
+let obtener_datos = () => {
+    let error = validar();
+
+    if (error) {
+
+        Swal.fire({
+                     type: 'error',
+                     titleText: '¡Campo Incompleto!',
+                     confirmButtonText: 'OK',
+                     allowEscapeKey: true,
+                     html: (""),
+                     });
+                     return false;
+
+        
+    } else {
+
+                    if($("#myAlert").find("div#myAlert2").length==0){
+                    $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'><i class='fa fa-check-circle' aria-hidden='true'></i> ¡SUS DATOS SE ENVIARON CORRECTAMENTE!</div>");
+                    }
+                    $("#myAlert").css("display", "").fadeOut(6500);
+
+
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxv01iqAvWGYQHcgQjuvfUrRI4NCHTou76oJ6wqRyajr7TKnbPcS3TTllm6CYyq-Pk/exec'
+                    const form = document.forms['regForm']
+                    form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    return false;
+                    })
+
+        Swal.fire({
+                     type: 'success',
+                     titleText: '¡SUS DATOS SE ENVIARON CORRECTAMENTE!',
+                     confirmButtonText: 'OK',
+                     allowEscapeKey: true,
+                     html: (''),
+                     }).then(() => {
+            limpiar();
+
+            setTimeout(function(){
+                window.location.href = "https://deptonominas.ml/OFF2022-CORRELATIVO";
+
+                            });
+        });
+    
+
+ 
+    
+    }
+};
+
+btn_enviar.addEventListener('click', obtener_datos);
+</script>
+
+
+<link href="///cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+       
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+   <!---------------------------------------------Mascara de Entrada--------------------------------------------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+   <script type="text/javascript">
+       $("#Fecha_Elaboración").mask("00/00/0000");
+       </script>
+   
+
+
+</body>
+</html>
