@@ -1,139 +1,8 @@
 body {
-    color:  #ffffff;
-}
-
-#Logo{
-    padding: 0px;
-    max-width: 200%;
-    height: auto;
-}
-
-
-#regForm {
-    background-color: #ffffff;
-    margin: 0px auto;
-    font-family: Raleway;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#DereAuto{
-    color: #2392db;
-    font-family: Raleway;
-}
-
-#register {
-    color: #2392db
-}
-
-h1 {
-    text-align: center
-}
-
-input {
-    padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    font-family: Raleway;
-    border: 1px solid #aaaaaa;
-    border-radius: 10px;
-}
-
-
-.tab input:focus {
-    border: 1px solid  #2392db !important;
-    outline: none
-}
-
-input.invalid {
-    border: 1px solid #e03a0666
-}
-
-.tab {
-    display: none
-}
-
-button {
-    background-color: #2392db;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-family: Raleway;
-    cursor: pointer;
-}
-
-
-button:hover {
-    opacity: 0.8
-}
-
-button:focus {
-    outline: none !important
-}
-
-#prevBtn {
-    background-color: #cfcdcd
-}
-
-
-#next1{
-    text-align: center;
-    margin: auto;
-    display: block;
-}
-
-
-.all-steps {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center
-}
-
-.step {
-    height: 40px;
-    width: 40px;
-    margin: 0 2px;
-    background-color: #cfcdcd;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    color: #2392db
-;
-    opacity: 0.5
-}
-
-.step.active {
-    opacity: 1
-}
-
-.step.finish {
-    color: #fff;
-    background: #2392db;
-    opacity: 1
-}
-
-.all-steps {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px
-}
-
-.thanks-message {
-    display: none
-}
-
-input[type="radio"]{
-    height: 35px;
-    width: 35px;
-    transform: scale(1);
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 #COM{
@@ -142,8 +11,29 @@ input[type="radio"]{
     left: 3px;
 }
 
+#COM1{
+    position: relative;
+    top: 1px; 
+    left: 3px;
+}
 
+#COMS{
+    position: relative;
+    top: 5px; 
+    left: 10px;
+}
 
+#CardObservación{
+    font-size: 75%;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    z-index: 0
+}
 
 .heading {
     font-weight: normal
@@ -356,13 +246,12 @@ input[type="radio"]{
     height: 25px;
     width: 25px;
     transform: scale(1);
+    cursor: pointer; 
 }
 
 input[type="checkbox"]{
     height: 20px;
     width: 20px;
     transform: scale(1);
-}
-#ultimo+div{
-    visibility:hidden;
+    cursor: pointer; 
 }
