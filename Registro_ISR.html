@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form ISR | 2023</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  
+  <link rel="stylesheet" href="Archivos ISR/css/style.css">
+  <script type="text/javascript" src='Archivos ISR/js/Funciones.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="Archivos ISR/js/Datos"></script>
+
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!-- partial:index.partial.html -->
+<div class="container">
+
+	<header class="header">
+		<div style="text-align: center;">
+			<div><img class="icon" src="https://i.ibb.co/Mn2jxnp/Imagen1-FINAL.jpg"></div>
+			<br>
+			<h3><b>LISTADO DEL PERSONAL DE PLANTA CENTRAL Y EDIFICIO ANEXO</b></h3>
+			<h5><b>RENGLONES PRESUPUESTARIOS 011, 022 Y 031</b></h5>
+		</div>
+	</header>
+
+	<div class="form-wrap">	
+		<form id="survey-form" autocomplete="off" novalidate class="needs-validation">
+
+			<label class="text-danger mb-3"><b>Obligatorio *</b></label>
+
+			<div class="row">
+			<div class="col">
+			<div class="mb-3">
+			<label class="form-control-label">Nombre del Departamento<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+			<input  onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Departamento" name="Departamento" placeholder="" class="form-control" required>   
+			</div>
+			</div>
+			  
+	
+			<div class="col-md-6">
+			<div class="mb-3">
+			<label class="form-control-label">Nombre del Jefe<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+			<input onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Jefe" name="Jefe" placeholder="" class="form-control" required>    
+			</div>
+			</div>
+			</div>
+
+			<div class="row">
+            <div class="col-md-6">
+            <div class="mb-3">
+            <label class="form-control-label">No. de Extensión<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+            <input type="tel" id="Extensión" name="Extensión" minlength="3" maxlength="8" placeholder="" class="form-control" onkeypress='return validaNumericos(event)' required/>    
+            </div>
+            </div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+            <div class="col">
+            <div class="mb-3">
+            <label class="form-control-label">No. de Empleado<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+            <input type="tel" id="Empleado" onclick="limpiar();" name="Empleado" minlength="1" maxlength="15" placeholder="" class="form-control" onkeypress='return validaNumericos(event)' required/>    
+            </div>
+            </div>
+
+
+            <div class="col-md-6">
+			<div class="mb-3">
+			<pre></pre>
+			<pre></pre>
+			<button type="button" id="Buscar" class="btn btn-success btn" onclick='cambioOpciones1();'><b><i class="bi bi-search"></i> Buscar</b></button>
+			</div>
+			</div>
+			</div>
+
+
+			<pre></pre>
+
+			<div class="row">
+            <div class="col">
+            <div class="mb-3">
+            <label class="form-control-label">-NIT-<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+            <input onkeyup="mayus(this);" minlength="5" maxlength="10" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" type="text" id="Nit" name="Nit" placeholder="" class="form-control" required>
+            </div>
+            </div>
+
+            <div class="col-md-6">
+			<div class="mb-3">
+				<label class="form-control-label">Renglón Presupuestario<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+				<select id="Renglon" name="Renglon" class="form-control" required>
+					<option value="" disabled selected>-</option> 
+                    <option value="RENGLON_011">011-Personal Permanente</option>
+                    <option value="RENGLON_022">022-Personal Por Contrato</option>
+                    <option value="RENGLON_031">031-Jornales</option>
+			</div>
+			</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label style="display: none" id="name-label" for="name">Name</label>
+						<input  style="display: none" type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="row">
+			<div class="col">
+			<div class="mb-3">
+			<label class="form-control-label">Nombre Completo<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+			<input onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Nombre_Completo" name="Nombre_Completo" placeholder="" class="form-control" required>   
+			</div>
+			</div>
+			</div>
+			
+
+			<div class="row" >
+				<div class="col-md-12">
+					<div class="form-group">
+						<textarea style="display: none" class="form-control" placeholder="Enter your comment here..."></textarea>
+					</div>
+				</div>
+			</div>
+			
+
+			<pre></pre>
+
+			<center>
+				<div class="col-md-4">
+					<button type="submit" id="btn_enviar" class="btn btn-primary btn-block"><b><i class="bi bi-send-fill"></i> Registrar</b></button>
+				</div>
+			</center>
+
+
+		</form>
+	</div>	
+</div>
+
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+	
+<div id="información" style="text-align: center; line-height: 75%;">
+<label class="form-control-label">Dirección General de Recursos Humanos en Salud</label>
+<br>
+<label class="form-control-label">Sección de Nóminas</label>
+<br>
+<label class="form-control-label">Horario de atención: 8:00 am a 16:30 pm</label>
+<br>
+<label class="form-control-label">Teléfono Directo: 2444-7450 </label>
+</div>
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+
+
+
+<!-- -------------------------------Mensaje flotante------------------------------------------ -->
+<div style="text-align: just;" class="container" style="display:none;" id="myAlert">
+</div>
+
+<div style="text-align: just;" class="container" style="display:none;" id="myAlert20">
+</div>
+
+
+
+<style>
+    #myAlert {
+    width:400px;
+    position:fixed;
+    bottom: 100px;
+    right: 10px;
+    }
+    
+    #myAlert20 {
+    width:400px;
+    position:fixed;
+    bottom: 100px;
+    right: 10px;
+    }
+    
+    
+    .alert {
+    position: relative;
+    }
+    
+    .alert .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+    }
+    
+    .alert .fa {
+    margin-right:.3em;
+    }
+    </style>
+    
+<!-- -------------------------------Mensaje flotante------------------------------------------ -->
+
+
+
+
+
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+<script>
+    'use strict';
+const btn_enviar = document.querySelector('#btn_enviar');
+const Text_Departamento = document.querySelector('#Departamento');
+const Text_Jefe = document.querySelector('#Jefe');
+const Text_Extensión = document.querySelector('#Extensión');
+const Text_Empleado = document.querySelector('#Empleado');
+const Text_Nit = document.querySelector('#Nit');
+const Text_Renglon = document.querySelector('#Renglon');
+const Text_Nombre_Completo = document.querySelector('#Nombre_Completo');
+
+
+
+let validar = () => {
+    let inputs_requeridos = document.querySelectorAll('#survey-form [required]');
+    let error = false;
+
+    for (let i = 0; i < inputs_requeridos.length; i++) {
+        if (inputs_requeridos[i].value == '') {
+            inputs_requeridos[i].classList.add('input-error');
+            error = true;
+        } else {
+            inputs_requeridos[i].classList.remove('input-error');
+        }
+    }
+
+
+
+    return error;
+};
+let limpiar = () => {
+    Text_Empleado.value = "";
+    Text_Nit.value = "";
+    Text_Renglon.value = "";
+    Text_Nombre_Completo.value = "";
+
+};
+
+let obtener_datos = () => {
+    let error = validar();
+
+    if (error) {
+
+        Swal.fire({
+                     type: 'error',
+                     titleText: '¡Campo Incompleto!',
+                     confirmButtonText: 'OK',
+                     allowEscapeKey: true,
+                     html: (""),
+                     });
+                     return false;
+        
+    } else {
+
+                    if($("#myAlert").find("div#myAlert2").length==0){
+                    $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'><i class='bi bi-check-circle-fill'></i> ¡SUS DATOS SE ENVIARON CORRECTAMENTE!</div>");
+                    }
+                    $("#myAlert").css("display", "").fadeOut(6500);
+
+
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcSycF2UxdtnSOZwvy_Jo2VZIx45W0NRey3xEcOsIxXGNqNW1JsUP1QA1Bh4pjHLiw/exec'
+                    const form = document.forms['survey-form']
+                    form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    return false;
+                    })
+
+        Swal.fire({
+                     type: 'success',
+                     titleText: '¡SUS DATOS SE ENVIARON CORRECTAMENTE!',
+                     confirmButtonText: 'OK',
+                     allowEscapeKey: true,
+                     html: (''),
+                     }).then(() => {
+            limpiar();
+        });
+    
+
+ 
+    
+    }
+};
+
+btn_enviar.addEventListener('click', obtener_datos);
+</script>
+
+
+<link href="///cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+       
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+
+</body>
+</html>
