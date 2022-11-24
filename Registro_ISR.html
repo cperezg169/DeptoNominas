@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="Archivos ISR/js/Datos"></script>
-<link rel="shortcut icon" href="Archivos ISR/favicon.ico">
+  <link rel="shortcut icon" href="Archivos ISR/favicon.ico">
 </head>
 
 <body oncontextmenu='return false' class='snippet-body'>
@@ -30,9 +30,9 @@
 	</header>
 
 	<div class="form-wrap">	
-		<form id="survey-form" autocomplete="off" novalidate class="needs-validation">
+		<form id="survey-form" autocomplete="off" novalidate class="needs-validation" method="post">
 
-			<label class="text-danger mb-3"><b>Obligatorio *</b></label>
+            <label class="text-danger mb-3"><b>Obligatorio *</b></label>
 
 			<div class="row">
 			<div class="col">
@@ -159,8 +159,6 @@
 <label class="form-control-label">Horario de atención: 8:00 am a 16:30 pm</label>
 <br>
 <label class="form-control-label">Teléfono Directo: 2444-7450 </label>
-<br>
-<label class="form-control-label">Consultas: eortiz@mspas.gob.gt </label>
 </div>
 
 
@@ -216,14 +214,12 @@
 
 
 
-
-
 <!--------------------------------------------Mensaje de Validación-------------------------------------------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 <script>
-    'use strict';
+
 const btn_enviar = document.querySelector('#btn_enviar');
 const Text_Departamento = document.querySelector('#Departamento');
 const Text_Jefe = document.querySelector('#Jefe');
@@ -232,7 +228,6 @@ const Text_Empleado = document.querySelector('#Empleado');
 const Text_Nit = document.querySelector('#Nit');
 const Text_Renglon = document.querySelector('#Renglon');
 const Text_Nombre_Completo = document.querySelector('#Nombre_Completo');
-
 
 
 let validar = () => {
@@ -248,10 +243,9 @@ let validar = () => {
         }
     }
 
-
-
     return error;
 };
+
 let limpiar = () => {
     Text_Empleado.value = "";
     Text_Nit.value = "";
@@ -260,37 +254,32 @@ let limpiar = () => {
 
 };
 
-let obtener_datos = () => {
-    let error = validar();
 
-    if (error) {
+jQuery('#survey-form').on('submit',function(e){
+e.preventDefault();
 
-        Swal.fire({
-                     type: 'error',
-                     titleText: '¡Campo Incompleto!',
-                     confirmButtonText: 'OK',
-                     allowEscapeKey: true,
-                     html: (""),
-                     });
-                     return false;
-        
-    } else {
+let error = validar();
 
-                    if($("#myAlert").find("div#myAlert2").length==0){
-                    $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'><i class='bi bi-check-circle-fill'></i> ¡SUS DATOS SE ENVIARON CORRECTAMENTE!</div>");
-                    }
-                    $("#myAlert").css("display", "").fadeOut(6500);
+if (error) {
 
+Swal.fire({
+             type: 'error',
+             titleText: '¡Campo Incompleto!',
+             confirmButtonText: 'OK',
+             allowEscapeKey: true,
+             html: (""),
+             });
+             return false;
 
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcSycF2UxdtnSOZwvy_Jo2VZIx45W0NRey3xEcOsIxXGNqNW1JsUP1QA1Bh4pjHLiw/exec'
-                    const form = document.forms['survey-form']
-                    form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    return false;
-                    })
+} else {
+    
+      jQuery.ajax({
+          url:'https://script.google.com/macros/s/AKfycbwcSycF2UxdtnSOZwvy_Jo2VZIx45W0NRey3xEcOsIxXGNqNW1JsUP1QA1Bh4pjHLiw/exec',
+          type:'post',
+          data:jQuery('#survey-form').serialize(),
+      });
 
-        Swal.fire({
+      Swal.fire({
                      type: 'success',
                      titleText: '¡SUS DATOS SE ENVIARON CORRECTAMENTE!',
                      confirmButtonText: 'OK',
@@ -299,15 +288,15 @@ let obtener_datos = () => {
                      }).then(() => {
             limpiar();
         });
-    
 
- 
-    
-    }
-};
+                    if($("#myAlert").find("div#myAlert2").length==0){
+                    $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'><i class='bi bi-check-circle-fill'></i> ¡SUS DATOS SE ENVIARON CORRECTAMENTE!</div>");
+                    }
+                    $("#myAlert").css("display", "").fadeOut(6500);
+                }
 
-btn_enviar.addEventListener('click', obtener_datos);
-</script>
+    });
+    </script>
 
 
 <link href="///cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
